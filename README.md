@@ -1,2 +1,5 @@
 # trashsignal.com
-# trashsignal.github.io
+
+The official™ [Trash Signal website][trash-signal-site].
+
+[trash-signal-site]: https://trashsignal.com
