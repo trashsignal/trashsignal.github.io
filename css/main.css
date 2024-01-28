@@ -1,7 +1,11 @@
-.vison {
-  height: 30px;
-  width: 30px;
+* {
+  background-color: #272727;
+}
+
+.vision {
+  height: 20em;
+  width: 14em;
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0em;
+  right: 0em;
 }
