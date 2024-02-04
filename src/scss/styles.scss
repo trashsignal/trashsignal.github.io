@@ -1,5 +1,3 @@
-@use "sass:map";
-
 // Override color theme variables
 
 $pink: #f96599;
@@ -19,11 +17,6 @@ $theme-colors: (
   "warning": $yellow,
   "danger": $orange,
 );
-
-
-@function theme-color($key: "primary") {
-  @return map-get($theme-colors, $key);
-}
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
