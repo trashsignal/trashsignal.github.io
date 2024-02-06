@@ -4,6 +4,7 @@
   "description": "The official™ [Trash Signal website][trash-signal-site].",
   "main": "index.js",
   "scripts": {
+    "build": "vite build",
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
