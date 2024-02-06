@@ -1,0 +1,42 @@
+// Override color theme variables
+
+$pink: #f96599;
+$orange: #f6610e;
+$yellow: #f6f418;
+$black: #272727;
+$blue: #90a9b7;
+
+$body-bg: $black;
+$body-color: $orange;
+
+$theme-colors: (
+  "primary": $orange,
+  "secondary": $yellow,
+  "info": $orange,
+  "success": $pink,
+  "warning": $yellow,
+  "danger": $orange,
+);
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.navbar {
+  .nav-item.active {
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: $orange;
+
+    &:hover, &:focus {
+      color: $yellow
+    }
+  }
+}
+
+.vision {
+  position: fixed;
+  bottom: 0em;
+  right: 0em;
+}
