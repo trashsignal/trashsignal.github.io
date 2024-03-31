@@ -21,6 +21,11 @@ $theme-colors: (
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+section {
+  display: flex;
+  padding-bottom: 500px;
+}
+
 .navbar {
   .nav-item.active {
     font-weight: bold;
@@ -29,8 +34,9 @@ $theme-colors: (
   .nav-link {
     color: $orange;
 
-    &:hover, &:focus {
-      color: $yellow
+    &:hover,
+    &:focus {
+      color: $yellow;
     }
   }
 }
