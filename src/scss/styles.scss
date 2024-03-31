@@ -21,9 +21,21 @@ $theme-colors: (
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+header {
+  overflow: hidden;
+  background-color: $body-bg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 section {
   display: flex;
   padding-bottom: 500px;
+}
+
+#main {
+  margin-top: 250px;
 }
 
 .navbar {
