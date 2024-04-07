@@ -1,5 +1,4 @@
 // Override color theme variables
-
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
@@ -71,9 +70,24 @@ section {
 }
 
 #footer-socials {
+  i {
+    color: $orange;
+    text-decoration: none;
+    padding: 5px;
+    &:hover {
+      color: $yellow;
+    }
+    &:visited {
+      color: $orange;
+    }
+  }
   left: 0em;
   position: fixed;
   bottom: 0em;
+  font-size: 1.2em;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  background-color: $black;
 }
 
 .footer-vision {
