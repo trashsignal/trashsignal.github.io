@@ -49,6 +49,17 @@ section {
     font-weight: bold;
   }
 
+  .nav-link.active {
+    // Remove "pill" style. (I tried removing the `nav-pills` class, but that
+    // broke the scrollspy behavior.)
+    background-color: transparent;
+    color: $yellow;
+    font-weight: bold;
+    font-size: 1.05em;
+    position: relative;
+    top: -1px;
+  }
+
   .nav-link {
     color: $orange;
 
