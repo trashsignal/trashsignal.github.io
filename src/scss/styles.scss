@@ -70,6 +70,10 @@ section {
 }
 
 #footer-socials {
+  a {
+    text-decoration: none;
+  }
+
   i {
     color: $orange;
     text-decoration: none;
@@ -81,6 +85,7 @@ section {
       color: $orange;
     }
   }
+
   left: 0em;
   position: fixed;
   bottom: 0em;
