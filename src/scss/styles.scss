@@ -1,5 +1,8 @@
 // Override color theme variables
 
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
 $pink: #f96599;
 $orange: #f6610e;
 $yellow: #f6f418;
@@ -9,13 +12,16 @@ $blue: #90a9b7;
 $body-bg: $black;
 $body-color: $orange;
 
-$theme-colors: (
-  "primary": $orange,
-  "secondary": $yellow,
-  "info": $orange,
-  "success": $pink,
-  "warning": $yellow,
-  "danger": $orange,
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $orange,
+    "secondary": $yellow,
+    "info": $orange,
+    "success": $pink,
+    "warning": $yellow,
+    "danger": $orange,
+  )
 );
 
 // Import all of Bootstrap's CSS
@@ -41,6 +47,17 @@ section {
 .navbar {
   .nav-item.active {
     font-weight: bold;
+  }
+
+  .nav-link.active {
+    // Remove "pill" style. (I tried removing the `nav-pills` class, but that
+    // broke the scrollspy behavior.)
+    background-color: transparent;
+    color: $yellow;
+    font-weight: bold;
+    font-size: 1.05em;
+    position: relative;
+    top: -1px;
   }
 
   .nav-link {
